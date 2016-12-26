@@ -9,10 +9,11 @@
 import WatchKit
 import Foundation
 
-
 class InterfaceController: WKInterfaceController {
     
     @IBOutlet var rateLabel: WKInterfaceLabel!
+    
+    var currencyService = CurrencyService()
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -31,7 +32,14 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func refresh() {
-        
+        currencyService.getExchangeRate(from: "usd", to: "vnd") { (rate, error) in
+            if error == nil {
+                self.rateLabel.setText(String(rate))
+            }
+            else {
+                self.rateLabel.setText("Error!!!")
+            }
+        }
     }
     
     

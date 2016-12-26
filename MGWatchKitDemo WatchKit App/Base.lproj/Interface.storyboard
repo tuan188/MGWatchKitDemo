@@ -19,7 +19,7 @@
                                 <label alignment="center" text="VND/USD" textAlignment="center" id="ejK-Mr-lhx">
                                     <fontDescription key="font" style="UICTFontTextStyleBody"/>
                                 </label>
-                                <label alignment="center" text="23,000.00" textAlignment="left" minimumScaleFactor="0.5" id="YW7-FV-wr2">
+                                <label alignment="center" text="0.0" textAlignment="left" minimumScaleFactor="0.5" id="YW7-FV-wr2">
                                     <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" type="system" pointSize="25"/>
                                 </label>
